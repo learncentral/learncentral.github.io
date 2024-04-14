@@ -1,1 +1,12 @@
+/* Custom styles */
+/* Custom styles */
+.box {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-dialog.contact-modal-dialog {
+  max-width: 800px; /* Adjust as needed */
+}
 
