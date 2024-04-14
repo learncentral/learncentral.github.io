@@ -1,1 +1,27 @@
+/* Custom styles for the dynamic background */
+.navbar {
+  position: relative;
+  overflow: hidden; /* Ensure the overflow is hidden */
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: -50%; /* Start the circles above the navbar */
+  left: -50%; /* Start the circles outside the left edge of the navbar */
+  width: 200%; /* Make the circles cover a larger area */
+  height: 200%; /* Make the circles cover a larger area */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 70%);
+  animation: animateBackground 10s linear infinite; /* Adjust animation duration and timing as needed */
+}
+
+/* Animation for the dynamic background */
+@keyframes animateBackground {
+  0% {
+    transform: translate(0, 0); /* Start position */
+  }
+  100% {
+    transform: translate(-50%, -50%); /* End position */
+  }
+}
 
