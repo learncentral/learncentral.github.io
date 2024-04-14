@@ -56,3 +56,8 @@
     }
   }
 }
+
+/* Adjust the navbar color to allow shapes to be visible */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
