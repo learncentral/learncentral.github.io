@@ -10,8 +10,8 @@
   position: absolute;
   top: -50%; /* Start slightly above the navbar */
   left: -50%; /* Start slightly to the left of the navbar */
-  width: 200%; /* Make the shapes cover a larger area */
-  height: 200%; /* Make the shapes cover a larger area */
+  width: 5%; /* Make the shapes cover a larger area */
+  height: 5%; /* Make the shapes cover a larger area */
   z-index: -1; /* Move the background behind other elements */
   pointer-events: none; /* Ensure the background doesn't interfere with clicks */
   background: transparent; /* Set background to transparent */
