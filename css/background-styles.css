@@ -4,24 +4,59 @@
   overflow: hidden; /* Ensure the overflow is hidden */
 }
 
-.navbar::before {
-  content: '';
-  position: absolute;
-  top: -50%; /* Start the circles above the navbar */
-  left: -50%; /* Start the circles outside the left edge of the navbar */
-  width: 200%; /* Make the circles cover a larger area */
-  height: 200%; /* Make the circles cover a larger area */
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 70%);
-  animation: animateBackground 10s linear infinite; /* Adjust animation duration and timing as needed */
-}
-
 /* Animation for the dynamic background */
 @keyframes animateBackground {
   0% {
-    transform: translate(0, 0); /* Start position */
+    transform: translateY(0) rotate(0); /* Start position */
   }
   100% {
-    transform: translate(-50%, -50%); /* End position */
+    transform: translateY(-100vh) rotate(360deg); /* End position */
   }
 }
 
+/* Generate multiple shapes with animation */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* Ensure the background doesn't interfere with clicks */
+  background: transparent; /* Set background to transparent */
+}
+
+/* Small circle animation */
+.navbar::before {
+  animation: animateBackground 20s linear infinite; /* Adjust animation duration and timing as needed */
+}
+
+/* Position circles randomly */
+@for $i from 1 through 15 {
+  .navbar::before {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: hsla(random(360), 70%, 60%, 0.7); /* Random color with alpha transparency */
+      border-radius: 50%; /* Make the shape a circle */
+      animation: move-$i 10s linear infinite alternate; /* Adjust animation duration and timing as needed */
+      top: random(100)%; /* Random vertical position */
+      left: random(100)%; /* Random horizontal position */
+    }
+  }
+}
+
+/* Animation for each shape */
+@for $i from 1 through 15 {
+  @keyframes move-#{$i} {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0); /* Start position */
+    }
+    100% {
+      transform: translateY(-100vh) translateX(100vw) rotate(360deg); /* End position */
+    }
+  }
+}
