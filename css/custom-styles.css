@@ -14,6 +14,9 @@
 .navbar-toggler {
   border: none; /* Remove border */
 }
+.bg-color{
+  background-color: #000000;
+}
 
 /* Custom collapse icon */
 .custom-toggler-icon {
@@ -21,7 +24,43 @@
   width: 30px; /* Adjust icon width as needed */
   height: 30px; /* Adjust icon height as needed */
 }
+.jumbotron {
+  font-family: 'Assistant', sans-serif; /* Apply Assistant font to jumbotron */
+}
+.footer-height{
+  min-height: 200px;
+  margin-top: 100px;
+}
 
+/* Style for gradient */
+#gradient-section {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  color: #ffffff;
+  padding: 30px;
+}
+.content-area{
+  border-radius: 10px;
+  background-color: #000000;
+}
+.circle-container {
+  display: flex;  /* Arrange circles horizontally */
+  padding: 30px;
 
+}
 
-
+.circle {
+  width: 20px;  /* Adjust circle size as needed */
+  height: 20px;
+  background-color: #c850c04f;  /* Change color as desired */
+  border-radius: 50%;  /* Create a circle */
+  margin: 6px;
+}
+.set-margin{
+  padding: 30px;
+}
+.text-center-l{
+  margin-left: 400px;
+  color: #ac86a9de;
+  font-weight: bolder;
+}
