@@ -59,7 +59,24 @@
 .set-margin{
   padding: 30px;
 }
-.text-color {
-  color: #ac86a9de;
-  font-weight: bolder;
+.text-color-a {
+  /* color: #ac86a9de; */
+  color: #d63131;
+  /* font-weight: bolder; */
+}
+.text-color-b {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word; 
+}
+.text-color-a1 {
+  color: #36e71e;
+}
+.text-color-a2 {
+  color: #FFCC70;
+}
+.icon-1 {
+  color: #FF0000;
 }
