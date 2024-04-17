@@ -56,6 +56,13 @@
   border-radius: 50%;  /* Create a circle */
   margin: 6px;
 }
+.circle-2 {
+  width: 20px;  /* Adjust circle size as needed */
+  height: 20px;
+  background-color: #c850c04f;  /* Change color as desired */
+  border-radius: 50%;  /* Create a circle */
+  margin: 6px;
+}
 .set-margin{
   padding: 30px;
 }
@@ -79,4 +86,11 @@
 }
 .icon-1 {
   color: #FF0000;
+}
+.courses-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hr-1 {
+  border-top: 1px solid #ffffff;
 }
