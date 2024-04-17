@@ -42,13 +42,13 @@
 .content-area{
   border-radius: 10px;
   background-color: #000000;
+  padding: 30px;
 }
 .circle-container {
-  display: flex;  /* Arrange circles horizontally */
-  padding: 30px;
-
+  display: flex;
+  justify-content: flex-start; /* Shift circles to the left */
+  padding-left: 30px; /* Add padding to the left of the circles */
 }
-
 .circle {
   width: 20px;  /* Adjust circle size as needed */
   height: 20px;
@@ -59,8 +59,7 @@
 .set-margin{
   padding: 30px;
 }
-.text-center-l{
-  margin-left: 400px;
+.text-center {
   color: #ac86a9de;
   font-weight: bolder;
 }
