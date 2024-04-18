@@ -35,7 +35,8 @@
 /* Style for gradient */
 #gradient-section {
   background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  background-image: linear-gradient(0deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   color: #ffffff;
   padding: 30px;
 }
@@ -89,8 +90,29 @@
 }
 .courses-box {
   margin-top: 20px;
-  margin-bottom: 20px;
+
 }
 .hr-1 {
   border-top: 1px solid #ffffff;
+}
+.faqs-section {
+  background-color: #4158D0;
+  background-image: linear-gradient(0deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  color: #ffffff;
+}
+.faqs-content {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.course-header {
+  margin-top: 30px;
+  border-left: 5px solid #a0a0a3;
+  color: #a0a0a3;
+}
+.course-box-footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+.course-header-bg {
+  background-color: #FFFFFF;
 }
