@@ -28,8 +28,8 @@
   font-family: 'Assistant', sans-serif; /* Apply Assistant font to jumbotron */
 }
 .footer-height{
-  min-height: 200px;
-  margin-top: 100px;
+  min-height: 300px;
+  margin-top: 0px;
 }
 
 /* Style for gradient */
@@ -99,6 +99,7 @@
   background-color: #4158D0;
   background-image: linear-gradient(0deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   color: #ffffff;
+  margin-top: 0px;
 }
 .faqs-content {
   padding-top: 70px;
@@ -115,4 +116,30 @@
 }
 .course-header-bg {
   background-color: #FFFFFF;
+}
+.faqs-svg {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.footer-col-1 {
+  padding-top: 30px;
+}
+.sdg-1 {
+  padding-top: 50px;
+}
+.sdg-2 {
+  margin-bottom: 30px;
+}
+.footer-logo-bg{
+  height: 200px;
+  background-color: #000000;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px #4158D0;
+}
+.footer-logo-bg img{
+  padding-top: 30px;
+}
+.footer-logo-bg p{
+  color: #FFFFFF;
+  margin-bottom: 30px;
 }
